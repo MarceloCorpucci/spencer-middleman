@@ -16,3 +16,23 @@ def step_impl(context):
 @then(u'I should get an "OK" message and "200" status code')
 def step_impl(context):
 	assert b'{"message": "ok"}' in context.response.data.splitlines()
+
+
+@given(u'I have the client_id "client_id_example"')
+def step_impl(context):
+	raise NotImplementedError(u'STEP: Given I have the client_id "client_id_example"')
+
+
+@given(u'the user "user_test"')
+def step_impl(context):
+	raise NotImplementedError(u'STEP: Given the user "user_test"')
+
+
+@when(u'I send a request using "/login"')
+def step_impl(context):
+	raise NotImplementedError(u'STEP: When I send a request using "/login"')
+
+
+@then(u'I should get a token')
+def step_impl(context):
+	raise NotImplementedError(u'STEP: Then I should get a token')
